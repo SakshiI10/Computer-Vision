@@ -4,8 +4,7 @@ Created on Thu Mar 14 11:50:57 2024
 
 @author: SMI
 """
-# Input image from user, convert it to Grayscale and store it.
-
+# Task 1: Input image from user, convert it to Grayscale and store it.
 import cv2
 
 path=input("Enter the path of your image: ")
@@ -17,6 +16,7 @@ cv2.imshow("Converted Image",img)
 
 var=cv2.waitKey(0)
 if var==ord("s"):
+    #it accept name of image and data
     cv2.imwrite("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\Output.png",img)
 else:
     cv2.destroyAllWindows()
