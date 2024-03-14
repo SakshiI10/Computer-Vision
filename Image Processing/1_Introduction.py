@@ -1,4 +1,5 @@
 ''' 
+1.
 Computer Vision
 a) Pixel
 b) Images
