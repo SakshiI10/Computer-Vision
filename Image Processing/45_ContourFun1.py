@@ -14,7 +14,7 @@ import cv2
 import numpy as np
 
 img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\Shapes.png")
-img = cv2.resize(img,(600,700))
+img = cv2.resize(img,(500,500))
 img1 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 ret,thresh = cv2.threshold(img1,240,255,cv2.THRESH_BINARY_INV)
 
