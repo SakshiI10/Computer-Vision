@@ -19,7 +19,7 @@ cv2.namedWindow("Color Adjustments",cv2.WINDOW_NORMAL)
 cv2.resizeWindow("Color Adjustments", (300, 300)) 
 cv2.createTrackbar("Thresh", "Color Adjustments", 0, 255, nothing)
 
-#COlor Detection Track
+#Color Detection Track
 cv2.createTrackbar("Lower_H", "Color Adjustments", 0, 255, nothing)
 cv2.createTrackbar("Lower_S", "Color Adjustments", 0, 255, nothing)
 cv2.createTrackbar("Lower_V", "Color Adjustments", 0, 255, nothing)
@@ -31,6 +31,7 @@ while True:
     _,frame = cap.read()
     frame = cv2.resize(frame,(400,400))
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    
     #detecting hand
     l_h = cv2.getTrackbarPos("Lower_H", "Color Adjustments")
     l_s = cv2.getTrackbarPos("Lower_S", "Color Adjustments")
@@ -55,6 +56,7 @@ while True:
     
     #findcontour(img,contour_retrival_mode,method)
     cnts,hier = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+    
     #Here cnts is a list of contours. ANd each contour is an array with x, y cordinate   
     #hier variable called hierarchy and it contain image information.
     #print("Number of contour==",cnts,"\ntotal contour==",len(cnts))
