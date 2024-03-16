@@ -26,6 +26,7 @@ cnts,hier = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 print("Number of contour: ",cnts,"\ntotal contour: ",len(cnts))
 print("Hierarchy: \n",hier)
 
+area1=[]
 # loop over the contours
 for c in cnts:
     # compute the center of the contour
@@ -38,9 +39,30 @@ for c in cnts:
     cv2.drawContours(img, [c], -1, (0, 255, 0), 2)
     cv2.circle(img, (cX, cY), 7, (255, 255, 255), -1)
     cv2.putText(img, "center", (cX - 20, cY - 20),cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+    #Find Area of Contour
+    area = cv2.contourArea(c)
+    area1.append(area)
     
+    if area<10000:
+        #contour Approx -  it is use to approx shape with less number of vertices
+        epsilon = 0.1*cv2.arcLength(c,True) #arc lenght take contour and return its perimeter
+        data= cv2.approxPolyDP(c,epsilon,True)
+        #Convexhull is used to provide proper contours convexity.
+        
+        hull = cv2.convexHull(data)
+        
+        x,y,w,h = cv2.boundingRect(hull)
+        img = cv2.rectangle(img,(x,y),(x+w,y+h),(125,10,20),5)
+ 
+    # draw the contour and center of the shape on the image
+    cv2.drawContours(img, [c], -1, (50, 100, 50), 2)
+    cv2.circle(img, (cX, cY), 7, (255, 255, 255), -1)
+    cv2.putText(img, "center", (cX - 20, cY - 20),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+
 cv2.imshow("original",img)
 cv2.imshow("gray",img1)
 cv2.imshow("thresh",thresh)
+
 cv2.waitKey(0)
 cv2.destroyAllWindows()
