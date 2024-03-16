@@ -34,12 +34,12 @@ sobelY= np.uint8(np.absolute(sobelY))
 #finally combine sobelX and sobelY togather
 sobelcombine = cv2.bitwise_or(sobelX,sobelY)
 
-cv2.imshow("original==",img)
-cv2.imshow("gray====",img_gray)
-cv2.imshow("Laplacian==",lap)
-cv2.imshow("SobelX===",sobelX)
-cv2.imshow("SobelY==",sobelY)
-cv2.imshow("COmbined image==",sobelcombine)
+cv2.imshow("original",img)
+cv2.imshow("gray",img_gray)
+cv2.imshow("Laplacian",lap)
+cv2.imshow("SobelX",sobelX)
+cv2.imshow("SobelY",sobelY)
+cv2.imshow("COmbined image",sobelcombine)
 
 #Now plot all the images on graph
 titles = ["original","gray","laplacian","sobelX","sobelY","combined"]
