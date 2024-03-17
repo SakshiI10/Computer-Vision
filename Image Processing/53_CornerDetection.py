@@ -26,7 +26,7 @@ res = cv.dilate(res, None)
 img[res > 0.01 * res.max()] = [0, 0, 255]  # marked color
 
 cv.imshow('dst', img)
-if cv.waitKey(0) & 0xff == 27:
+if cv2.waitKey(1) & 0xFF == ord('q'):
     cv.destroyAllWindows()
 '''
 
