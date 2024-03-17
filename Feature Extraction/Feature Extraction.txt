@@ -1,0 +1,6 @@
+1. Feature Extraction: Identification or extraction of relevant information from images.
+
+a) Egde Detection: Canny Edge Detection
+b) Corner Detection: Harris Corner Detection, Shi Tomasi Corner Detection
+c) Texture: Represent patterns or repeated structure within image.
+d) Blob Detection: Region with similar intensity
