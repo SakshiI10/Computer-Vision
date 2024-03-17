@@ -24,8 +24,7 @@ while True:
     print(a)
     res = cv2.Canny(img_gray,a,255)
     cv2.imshow("Canny",res)
-    k=cv2.waitKey(1) & 0xFF
-    if k == 27:
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cv2.destroyAllWindows()
