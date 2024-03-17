@@ -31,7 +31,7 @@ while True:
     f = c.cvtColor(f,c.COLOR_BGR2RGB)
     output.write(f)
     c.imshow("Live_Recording", f)
-    if c.waitKey(1) == ord("q"):
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 
