@@ -1,0 +1,5 @@
+Object recognition, also known as object detection or object classification, is a fundamental task in computer vision that involves identifying and classifying objects within an image or a video sequence.
+Object Recognition Techniques:
+a) Template Matching
+b) Traditional ML: SVM, KNN 
+c) Deep Learning: CNN 
