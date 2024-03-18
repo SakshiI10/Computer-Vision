@@ -6,11 +6,11 @@ Created on Fri Mar 15 22:07:33 2024
 """
 #Canny Edge Detection using OpenCV
 #Canny Edge Detection is a popular edge detection approach.
-#It is use  multi-stage algorithm to detect a edges.
+#It is a multi-stage algorithm to detect a edges.
 #It was developed by John F. Canny in 1986.
 #This approach combine with 5 steps.
-# 1) -  NOise reduction(gauss)), 2) -Gradient calculation( ,
-# 3) - Non-maximum suppresson, 4) - Double Threshold,
+# 1) - NOise reduction(gauss)),     2) - Gradient calculation
+# 3) - Non-maximum suppression,     4) - Double Threshold,
 # 5) - Edge Tracking by Hysteresis 
 import cv2
 import numpy as np

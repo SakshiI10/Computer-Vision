@@ -1,0 +1,7 @@
+Image segmentation is a fundamental task in computer vision that involves partitioning an image into multiple segments or regions based on certain criteria. 
+The goal of segmentation is to group together pixels with similar properties, such as color, intensity, texture, or spatial proximity, while separating them from the rest of the image. 
+This process is essential for various computer vision applications, including object detection, image understanding, medical image analysis, and scene interpretation. Here's an overview of image segmentation:
+Types of Image Segmentation:
+a) Thresholding
+b) Contours
+c) CNN
