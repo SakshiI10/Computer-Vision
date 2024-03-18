@@ -1,0 +1,9 @@
+Motion analysis is a field within computer vision that focuses on tracking and analyzing the movement of objects within videos or image sequences.
+It enables machines to understand and interpret motion patterns.
+Key Features of Motion Analysis:
+a) Object tracking
+b) Optical Flow
+c) Motion Segmentation
+d) Activity Recognition
+e) Gesture Recognition
+f) Event Detection
