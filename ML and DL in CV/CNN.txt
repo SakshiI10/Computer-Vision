@@ -1,0 +1,10 @@
+CNN:
+Convolutional Neural Networks (CNNs) are a type of deep neural network architecture specifically designed for image processing tasks.
+They consist of multiple layers, including convolutional layers for feature extraction and pooling layers for spatial reduction. 
+CNNs have become a cornerstone in computer vision tasks such as image classification, object detection, semantic segmentation, and image generation.
+Key concepts and components of CNNs include:
+Convolutional Layers: These layers apply convolutional operations to input images, extracting spatial features such as edges, textures, and shapes.
+Pooling Layers: Pooling layers downsample feature maps, reducing spatial dimensions while preserving important features.
+Fully Connected Layers: These layers perform classification or regression tasks based on the extracted features.
+Activation Functions (e.g., ReLU, Sigmoid, Tanh): Introduce non-linearity into the network, enabling it to learn complex mappings between inputs and outputs.
+Training Techniques: CNNs are typically trained using optimization algorithms like Stochastic Gradient Descent (SGD) or its variants, along with techniques such as dropout, batch normalization, and data augmentation.

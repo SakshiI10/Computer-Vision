@@ -1,0 +1,9 @@
+Machine Learning:
+Machine Learning is a branch of artificial intelligence that focuses on developing algorithms and techniques that enable computers to learn from data and make predictions or decisions without being explicitly programmed.
+In the context of computer vision, machine learning algorithms are often used for tasks such as:
+a) Image classification
+b) Object detection
+c) Image segmentation.
+
+Deep Learning:
+Deep Learning is a subfield of machine learning that focuses on developing artificial neural networks with many layers (deep architectures) to learn complex representations of data.

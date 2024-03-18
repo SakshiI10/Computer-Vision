@@ -1,0 +1,4 @@
+K-Nearest Neighbors (KNN) is a simple yet effective algorithm used in various machine learning tasks, including computer vision.
+KNN in CV:
+a) Feature extraction
+b) Image representations
