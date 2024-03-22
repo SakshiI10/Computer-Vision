@@ -6,7 +6,7 @@ Created on Thu Mar 14 12:31:18 2024
 """
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 print(cap)
 
 #DIVX, XVID, MJPG, X264, WMV1, WMV2

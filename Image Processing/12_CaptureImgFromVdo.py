@@ -4,7 +4,6 @@ Created on Thu Mar 14 16:27:08 2024
 
 @author: SMI
 """
-
 import cv2
 
 vidcap = cv2.VideoCapture("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\NatureV.mp4")
@@ -28,7 +27,6 @@ while True:
       if cv2.waitKey(1) & 0xFF == ord("q"):
           break
           cv2.destroyAllWindows()
-
 
 vidcap.release() 
 cv2.destroyAllWindows()  

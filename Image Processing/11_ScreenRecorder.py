@@ -6,34 +6,31 @@ Created on Thu Mar 14 16:18:02 2024
 """
 
 import pyautogui as p
-import cv2 as c
+import cv2
 import numpy as np
 
 #Create resolution
 rs = p.size()
 
 #filename in which we store recording
-fn = input("Please Enter any file name and Path")
-#Fix the frame rate
-fps = 60.0
-fourcc = c.VideoWriter_fourcc(*'XVID')
-output = c.VideoWriter(fn,fourcc,fps,rs)
+fn = input("Please Enter any file name and Path: ")
+
+output = cv2.VideoWriter(fn,*"XVID",60,rs)
 
 #create recording module
-c.namedWindow("Live_Recording",c.WINDOW_NORMAL)
+cv2.namedWindow("Live_Recording",cv2.WINDOW_NORMAL)
 
 #Resize the window
-c.resizeWindow("Live_Recording",(600,400))
+cv2.resizeWindow("Live_Recording",(600,400))
 
 while True:
     img = p.screenshot() #image
     f = np.array(img) #convert image into array
-    f = c.cvtColor(f,c.COLOR_BGR2RGB)
+    f = cv2.cvtColor(f,cv2.COLOR_BGR2RGB)
     output.write(f)
-    c.imshow("Live_Recording", f)
+    cv2.imshow("Live_Recording", f)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-
 output.release() 
-c.destroyAllWindows() 
+cv2.destroyAllWindows() 
