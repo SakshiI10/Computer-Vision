@@ -15,7 +15,7 @@ camera = "http://192.168.253.160:8080/video"
 cap = cv2.VideoCapture(0) 
   
 cap.open(camera)
-print("check===",cap.isOpened())
+print("check",cap.isOpened())
 
 #it is 4 byte code which is use to specify the video codec
 fourcc = cv2.VideoWriter_fourcc(*"XVID")  # *"XVID"
@@ -36,5 +36,4 @@ while(cap.isOpened()):
     
 # Release everything if job is finished
 cap.release()
-output.release()
 cv2.destroyAllWindows()
