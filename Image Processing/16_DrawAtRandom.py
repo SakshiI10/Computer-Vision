@@ -5,7 +5,6 @@ Created on Thu Mar 14 20:47:12 2024
 @author: SMI
 """
 #Draw shape at random mouseclick position
-
 import numpy as np
 import cv2
 

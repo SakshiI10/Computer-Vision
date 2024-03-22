@@ -38,4 +38,7 @@ while True:
     cv2.imshow("HSV Image", imgHSV)
     cv2.imshow("Mask Image", mask)
     cv2.imshow("Result Image", imgResult)
-    cv2.waitKey(1)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cv2.destroyAllWindows()
