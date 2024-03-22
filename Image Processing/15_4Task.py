@@ -9,13 +9,13 @@ import cv2
 import datetime
 
 cap = cv2.VideoCapture("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\NatureV.mp4")  
-print("for width===",cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-print("for height==",cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+print("for width",cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+print("for height",cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 cap.set(3, 600)  #here 3 for width
 cap.set(4, 800)  #here 4 for height 
-print("Width====",cap.get(3))
-print("Height===",cap.get(4))
+print("Width: ",cap.get(3))
+print("Height: ",cap.get(4))
 
 while(cap.isOpened()):
     ret, frame = cap.read()
