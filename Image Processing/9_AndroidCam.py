@@ -5,7 +5,6 @@ Created on Thu Mar 14 15:41:09 2024
 @author: SMI
 """
 #How to use android device camera as webcam in OPencv.
-
 import cv2
 
 camera = "http://192.168.253.160:8080/video"

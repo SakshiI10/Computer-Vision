@@ -16,7 +16,7 @@ while True:
       # save frame as JPEG file
       cv2.imwrite("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\Frames\\imgN%d.jpg" % count, image)
 
-      #used to hold speed of frane generation
+      #used to hold speed of frame generation
       vidcap.set(cv2.CAP_PROP_POS_MSEC,(count**100)) 
       
       ret,image = vidcap.read()

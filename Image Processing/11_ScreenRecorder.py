@@ -4,7 +4,6 @@ Created on Thu Mar 14 16:18:02 2024
 
 @author: SMI
 """
-
 import pyautogui as p
 import cv2
 import numpy as np
