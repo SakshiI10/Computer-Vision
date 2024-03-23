@@ -12,7 +12,7 @@ img=cv2.resize(img,(800,800))
 
 #now pass like [y1:y2,x1:x2]
 roi = img[55:210,320:440]
-#cv2.imshow("roi image==",roi)
+#cv2.imshow("roi image",roi)
 
 #putting roi into any pixel values
 img[50:205,431:551] = roi  

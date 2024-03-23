@@ -6,7 +6,7 @@ Created on Fri Mar 15 10:49:02 2024
 """
 #Image Blending with open cv 
 
-#Here We use two important functions cv2.add(), cv2.addWeighted() etc.
+#Here We use two important functions cv2.add(), cv2.addWeighted().
 #Blending means addition of two images, if you want to blend two images then both have same size
 import cv2
 import numpy as np
@@ -31,8 +31,8 @@ result1 = cv2.add(img1,img2)
 
 #sum of both the weight  = w1+w2 = 1(max)
 #function cv2.addWeighted(img1,wt1,img2,wt2,gama_val)
-result2 = cv2.addWeighted(img1,0.5,img2,0.5,0)
-cv2.imshow("Result 2 = ",result2)
+result2 = cv2.addWeighted(img1, 0.5, img2, 0.5, 0)
+cv2.imshow("Result 2 =",result2)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()

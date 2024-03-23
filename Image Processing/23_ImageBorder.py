@@ -5,7 +5,6 @@ Created on Fri Mar 15 10:43:25 2024
 @author: SMI
 """
 # Creating Image Border
-
 import cv2
 
 img=cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\lion.jpg")
