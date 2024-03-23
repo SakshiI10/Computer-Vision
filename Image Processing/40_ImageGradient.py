@@ -4,9 +4,9 @@ Created on Fri Mar 15 21:40:59 2024
 
 @author: SMI
 """
-#Image Gradient--
-#It is a directional change in the color or intensity in an image.
-#It is most important part to find inormation from image, Like finding edges within the images.
+#Image Gradient
+#It is a directional change in the color or intensity of image.
+#It is used to find inormation from image, Like finding edges within the images.
 #There are various methods to find image gradient: Laplacian Derivatives,SobelX and SobelY.
 import cv2
 import numpy as np
