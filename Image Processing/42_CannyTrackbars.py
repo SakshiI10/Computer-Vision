@@ -19,7 +19,7 @@ cv2.namedWindow("Canny")
 cv2.createTrackbar("Threshold", "Canny", 0, 255, nothing)
 
 while True:
-    a= cv2.getTrackbarPos('Threshold','Canny')
+    a = cv2.getTrackbarPos('Threshold','Canny')
     
     print(a)
     res = cv2.Canny(img_gray,a,255)

@@ -7,7 +7,7 @@ Created on Thu Mar 14 15:55:45 2024
 #Capture video from youtube
 import cv2
 import pafy
-
+ 
 url = "https://www.youtube.com/watch?v=JPuenEXgp_M"
 data=pafy.new(url)
 data = data.getbest(preftype="mp4")  

@@ -12,7 +12,7 @@ camera = "http://192.168.253.160:8080/video"
 
 #Here parameter 0 is a path of any video use for webcam
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW) 
-  
+   
 cap.open(camera)
 print("check",cap.isOpened())
 

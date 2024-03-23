@@ -1,5 +1,5 @@
 import cv2
-print("Package imported")
+print("Package imported") 
 
 cap = cv2.VideoCapture(0)
 # Define width i.e. ID no. 3

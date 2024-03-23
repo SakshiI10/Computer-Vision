@@ -1,6 +1,29 @@
 Flow of following programs: 
-1) Capture Video
+1) Capture Video:
+a) Capture video using cv2.VideoCapture() function in a variable cap.
+b) In while loop, read its frame and store it in a variable.
+c) Show it
+
 2) Android Camera
+a) Store IP address of the camera in a variable
+b) Capture video using cv2.VideoCapture() function in a variable cap.
+c) In while loop, read its frame and store it in a variable.
+d) Show it.
+e) After capturing store it in a folder using cv2.VideoWriter(path, codec, fps, resolution) function.
+
 3) YouTube Capture
+a) Store url of a video in a variable.
+b) Capture video using cv2.VideoCapture() function in a variable cap.
+c) Open the url in cap.
+d) In while loop, read its frame and store it in a variable.
+e) After capturing store it in a folder using cv2.VideoWriter(path, codec, fps, resolution) function.
+
 4) Screen Recording
+a) Create a window using cv2.namedWindow.
+b) Capture screenshots of each frame using pyautogui library.
+c) After capturing store it in a folder using cv2.VideoWriter(path, codec, fps, resolution) function.
+
 5) Capture Images from Video
+a) Capture video using cv2.VideoCapture() function in a variable cap.
+b) Read it in another variable.
+c) Save each frame of the video in a folder using function cv2.imwrite().
