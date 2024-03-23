@@ -4,7 +4,6 @@ Created on Fri Mar 15 11:01:56 2024
 
 @author: SMI
 """
-
 #result Blending with Trackbars 
 import numpy as np
 import cv2 
@@ -12,6 +11,7 @@ import cv2
 #read two different images of same channel
 img1 = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\roi_opr.jpg")
 img1 = cv2.resize(img1,(500,700))
+
 img2 = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\thor.jpg")
 img2 = cv2.resize(img2,(500,700))
     
@@ -23,12 +23,12 @@ img = np.zeros((400,400,3),np.uint8)
 #create track bar windows
 cv2.namedWindow('Win') 
 
-cv2.createTrackbar('TrackBar','Win',1,100,blend)
+cv2.createTrackbar('TrackBar', 'Win', 1, 100, blend)
 
 #create switch for invoke the trackbars
 switch = '0 : OFF \n 1 : ON'  
 #create track bar for switch
-cv2.createTrackbar(switch,'Win',0,1,blend)  
+cv2.createTrackbar(switch, 'Win', 0, 1, blend)  
 
 while True:
     a = cv2.getTrackbarPos('TrackBar','Win') 
