@@ -18,13 +18,13 @@ print("The pixel of that co-ordinates: ",px) #we get the pixel value
 #We know we have three channel -   0,1,2
 # accessing only blue pixel
 blue = img[520,580,0]
-print("the pixel having blue color==",blue)
+print("the pixel having blue color: ",blue)
 
 grn = img[520,580,1] #for green pass 1
-print("the pixel having grn color==",grn)
+print("the pixel having grn color: ",grn)
 
 red = img[520,580,2] #for red pass 2
-print("the pixel having red color==",red)
+print("the pixel having red color: ",red)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()

@@ -11,15 +11,15 @@ img=cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\pika
 img = cv2.resize(img,(300,300))
 
 #returns a tuple of number of rows, columns, and channels
-print("shape==",img.shape) 
+print("shape",img.shape) 
 
 #returns Total number of pixels is accessed
-print("no.of pixels==",img.size) 
+print("no.of pixels",img.size) 
 
 #returns Image datatype is obtained
-print("datatype==",img.dtype) 
+print("datatype",img.dtype) 
 
-print("Imagetype==",type(img))
+print("Imagetype",type(img))
 #cv2.imshow("res",img)
 
 #split  -  return 3 channel of ur image which is blue,green,red
