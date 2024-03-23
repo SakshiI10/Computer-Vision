@@ -4,7 +4,6 @@ Created on Fri Mar 15 16:28:20 2024
 
 @author: SMI
 """
-#-------------Morphological Transformations-----------------------
 #Morphological transformations are some simple operations based on the image shape.
 #It is normally performed on binary images. 
 # It needs two inputs, 1)- original image, 2)- structuring element(kernel).
@@ -13,14 +12,13 @@ Created on Fri Mar 15 16:28:20 2024
 import cv2
 import numpy as np
 
-#Erosion---
-#it erodes away the boundaries of foreground object
-#kernal slides through all the image and all the pixel 
-#from the original image conside 1 only if kernal's pixel is 1
+#Erosion
+#It erodes away the boundaries of foreground object. Erosion effectively shrinks the boundaries of the white regions in the image. It's useful for removing small white noises, detach small objects, and separate two connected objects.
 
 img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\col_balls.jpg",0)
+
 _,mask= cv2.threshold(img,230,255,cv2.THRESH_BINARY_INV)
-kernel = np.ones((2,2),np.uint8)# 5x5 kernel with full of ones. 
+kernel = np.ones((2,2),np.uint8) # 2x2 kernel with full of ones. 
 e = cv2.erode(mask,kernel) #optional parameters   iterations = 2
 '''
 cv2.imshow("img",img) 

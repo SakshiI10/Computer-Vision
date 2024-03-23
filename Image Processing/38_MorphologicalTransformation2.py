@@ -2,10 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-# Corrected file path
 img_path = "D:\\My codes\\Computer Vision\\Image Processing\\Resources\\col_balls.jpg"
-
-# Read the image
 img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
 
 # Check if the image has been successfully loaded
