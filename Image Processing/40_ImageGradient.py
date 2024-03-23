@@ -12,7 +12,7 @@ import cv2
 import numpy as np
 
 #load image into gray scale
-img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\thor.jpg")
+img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\thor.jpg",0)
 img = cv2.resize(img,(400,300))
 img_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 

@@ -4,7 +4,6 @@ Created on Sun Mar 17 13:02:37 2024
 
 @author: SMI
 """
-
 #Circle detection using opencv and HoughCircle
 import numpy as np
 import cv2

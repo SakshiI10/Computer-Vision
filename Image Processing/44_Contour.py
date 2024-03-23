@@ -8,7 +8,7 @@ Created on Fri Mar 15 22:37:08 2024
 #For better accuracy, use binary images and also apply edge detection before finding countours.
 #findCountour function manipulate original imge so copy it before proceeding.
 #findContour is like finding white object from black background.
-import cv2
+import cv2 
 
 img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\logo.jpg")
 img1 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -23,8 +23,6 @@ print("Number of contour: ",cnts,"\ntotal contour: ",len(cnts))
 print("Hierarchy:\n",hier)
 
 #drawcontour(img,cnts,id of contour,color,thickness)#here if we draw all
-#contour just pass -1
-#Draw the contours
 img = cv2.drawContours(img,cnts,-1,(176,10,15),4)
 
 cv2.imshow("original",img)

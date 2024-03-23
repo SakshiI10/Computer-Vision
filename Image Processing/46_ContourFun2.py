@@ -9,7 +9,6 @@ import cv2
 img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\hand.jpg")
 img = cv2.resize(img,(600,700))
 img1 = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-
 blur = cv2.medianBlur(img1,11)
 ret,thresh = cv2.threshold(blur,240,255,cv2.THRESH_BINARY_INV)
 dilata = cv2.dilate(thresh,(1,1),iterations = 6)

@@ -7,17 +7,16 @@ Created on Sun Mar 17 15:47:32 2024
 #Face Detection using haarcascade file 
 import cv2
 
-face=cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascades\\haarcascade_frontalface_default.xml") #for detecting face
-eye = cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascades\\haarcascade_eye.xml") #for detecting eyes
+face=cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascade Files\\haarcascade_frontalface_default.xml") 
+eye = cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascade Files\\haarcascade_eye.xml")
 
 image=cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\a.jpg")
-gray= cv2.cvtColor(image,cv2.COLOR_BGR2GRAY) #convert into gray 
+gray= cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) #convert into gray 
 
 #parameters(img,scale_factor[reduce image size],min_neighbour)
 faces = face.detectMultiScale(gray,4,4)   #for  faces
 
 for(x,y,w,h) in faces:
-    
     image=cv2.rectangle(image,(x,y),(x+w,y+h),(127,0,205),3)
     
     #Now detect eyes

@@ -13,7 +13,7 @@ import cv2
 img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\thor.jpg")
 img = cv2.resize(img,(700,700))
 
-#Gaussian Pyramid Have 2 function-1) cv2.pyrUp(),2)-cv2.pyrDown()
+#Gaussian Pyramid Have 2 function-1) cv2.pyrUp(), 2)-cv2.pyrDown()
 pd1 = cv2.pyrDown(img)
 pd2 = cv2.pyrDown(pd1)
 pu1 = cv2.pyrUp(pd2)

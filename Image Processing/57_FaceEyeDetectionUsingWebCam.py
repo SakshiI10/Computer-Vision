@@ -6,8 +6,8 @@ Created on Sun Mar 17 16:01:44 2024
 """
 import cv2
 
-face=cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascades\\haarcascade_frontalface_default.xml") #for detecting face
-eye = cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascades\\haarcascade_eye.xml") #for detecting eyes
+face=cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascade Files\\haarcascade_frontalface_default.xml") #for detecting face
+eye = cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascade Files\\haarcascade_eye.xml") #for detecting eyes
 
 def dector(img):
     gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)

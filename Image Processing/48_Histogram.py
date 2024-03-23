@@ -19,6 +19,7 @@ from matplotlib import pyplot as plt
 img = np.zeros((200,200), np.uint8)
 cv2.rectangle(img, (0, 100), (200, 200), (255), -1)
 cv2.rectangle(img, (0, 50), (50, 100), (127), -1)
+
 #It accept parameters like ([img],[channel],mask,[histsize],range[0-255]).
 hist = cv2.calcHist([img], [0], None, [256], [0, 256])
 plt.plot(hist)
@@ -34,6 +35,7 @@ cv2.imshow("img", img)
 cv2.imshow("b", b)
 cv2.imshow("g", g)
 cv2.imshow("r", r)
+
 #Plotting different channel with hist
 plt.hist(b.ravel(), 256, [0, 256])
 plt.hist(g.ravel(), 256, [0, 256])
