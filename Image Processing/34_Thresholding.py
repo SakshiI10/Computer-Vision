@@ -5,16 +5,12 @@ Created on Fri Mar 15 12:04:16 2024
 @author: SMI
 """
 #Threholding is a segmentation techique which is use to separate selected object from an image.
-
-#Image Thresholding -  If pixel value is greater than a threshold value
-#it is assigned one value (may be white), 
-#else it is assigned another value (may be black).
-#thresholding is use to subtract image from background
-#Thresholding is of  3 type -  Simple thresholding, Adaptive thresholding, Otsu’s thresholding
-#image should be in gray scale
+'''
+Image Thresholding - If pixel value is greater than a threshold value, it is done on a gray scale image.
+#Thresholding is of 3 type -  Simple thresholding, Adaptive thresholding, Otsu’s thresholding
 #simple thresholding(img,pixel_thresh,_max_thresh_pixel,style)
 #it return 2 values - one is random data , second is threshold
-
+'''
 import cv2 
 
 img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\black_white.png",0)

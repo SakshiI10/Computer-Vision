@@ -4,7 +4,6 @@ Created on Fri Mar 15 11:30:25 2024
 
 @author: SMI
 """
-
 #HSV -  Hue saturation value
 #Hsv is use to separate image information on the basis of color luminous or intensity.
 #We use Hsv where we perform operation on the basis of color.
@@ -12,7 +11,7 @@ Created on Fri Mar 15 11:30:25 2024
 
 # Hue is used to select color from 360 portion 
 # Staturation is amount of color  which is selected in hue.(color shades)
-# Valueis brightness of the color.
+# Value is brightness of the color.
 
 import cv2
 import numpy as np
@@ -36,10 +35,3 @@ while True:
         break
 
 cv2.destroyAllWindows()
-
-
-
-
-
-
-
