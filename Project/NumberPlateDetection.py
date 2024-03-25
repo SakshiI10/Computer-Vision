@@ -6,15 +6,13 @@ Created on Fri Mar 22 15:49:39 2024
 """
 import cv2
 
-frameWidth = 500
-frameHeight = 500
 nPlateCascade = cv2.CascadeClassifier("D:\\My codes\\Computer Vision\\Image Processing\\Cascade Files\\haarcascade_russian_plate_number.xml")
 minArea = 200
 color = (255,0,255)
 
 # Load image
 img = cv2.imread("D:\\My codes\\Computer Vision\\Project\\Resources\\p3.jpg")
-img = cv2.resize(img, (frameWidth, frameHeight))  # Resize image to specified frame dimensions
+img = cv2.resize(img, (500,500))  # Resize image to specified frame dimensions
 imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 count = 0
 
