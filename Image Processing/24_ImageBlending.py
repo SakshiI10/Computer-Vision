@@ -4,10 +4,10 @@ Created on Fri Mar 15 10:49:02 2024
 
 @author: SMI
 """
-#Image Blending with open cv 
+#Image Blending with open cv:
+#Blending means addition of two images, if you want to blend two images then both have same size.
+#Here, we are going to use two important functions cv2.add(), cv2.addWeighted().
 
-#Here We use two important functions cv2.add(), cv2.addWeighted().
-#Blending means addition of two images, if you want to blend two images then both have same size
 import cv2
 import numpy as np
 

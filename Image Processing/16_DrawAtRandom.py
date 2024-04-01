@@ -15,7 +15,7 @@ def draw(event,x,y,flags,param):
     print("flags: ",flags)
     print("param: ",param)
     
-    if event == cv2.EVENT_LBUTTONDBLCLK:
+    if event == cv2.EVENT_LBUTTONDOWN:
         cv2.circle(img,(x,y),100,(125,0,255),5)
         
     if event == cv2.EVENT_RBUTTONDBLCLK:

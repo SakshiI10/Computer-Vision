@@ -40,7 +40,7 @@ res = cv2.add(img1_bg,img2_fg)
 final = img1
 final[0:r,0:c]= res   #final output
 
-cv2.imshow("Step -1 gry",img_gry)
+cv2.imshow("Step -1 roi",roi)
 cv2.imshow("Step -2 Mask",mask)
 cv2.imshow("Step -3 Mask_inv",mask_inv)
 cv2.imshow("Step -4 Mask_bg",img1_bg)

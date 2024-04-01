@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Define the width and height for the output image
-width, height = 250, 350
+width, height = 150, 200
 
 # Read the input image
 img = cv2.imread("D:/My codes/Computer Vision/Image Processing/Resources/Cards.jpeg")

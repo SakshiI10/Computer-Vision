@@ -12,11 +12,12 @@ cv2.imshow("lion",img)
 
 #access a pixel value by its row and column coordinates, store cordinate in variable
 px = img[520,580] 
-print("The pixel of that co-ordinates: ",px) #we get the pixel value
+print("The colour of pixel at that co-ordinates: ",px) #we get the pixel value
 
 #Now try to find selected channel value from cordinate
 #We know we have three channel - 0,1,2
-# accessing only blue pixel
+
+#accessing only blue pixel
 blue = img[520,580,0]
 print("the pixel having blue color:",blue)
 
