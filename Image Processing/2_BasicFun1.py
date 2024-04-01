@@ -27,7 +27,7 @@ print(img3)
 img3=cv2.resize(img3,(700,700))
 print(img3)
 
-cv2.imshow("Original Image",img)
+cv2.imshow("Flipped Image",img)
 cv2.imshow("More Saturated Image",img2)
 cv2.imshow("Gray Image",img3)
 
