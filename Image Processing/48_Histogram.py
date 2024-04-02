@@ -5,7 +5,7 @@ Created on Sat Mar 16 19:19:32 2024
 @author: SMI
 """
 #Imgage Histogram - Find, Plot and Analyze
-#It which gives you an overall idea about the intensity distribution of an image. 
+#It gives an overall idea about the intensity distribution of an image. 
 #It distribute data along x and y axis.
 # x - axis contain range of color vlaues.
 # y - axis contain numbers of pixels in an image.
@@ -25,10 +25,8 @@ hist = cv2.calcHist([img], [0], None, [256], [0, 256])
 plt.plot(hist)
 plt.show()
 cv2.imshow("res",img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
 
-img = cv2.imread("Data\\thor.jpg")
+img = cv2.imread("D:\\My codes\\Computer Vision\\Image Processing\\Resources\\thor.jpg")
 img = cv2.resize(img,(500,650))
 b, g, r = cv2.split(img)
 cv2.imshow("img", img)
