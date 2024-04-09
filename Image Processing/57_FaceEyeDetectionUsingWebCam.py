@@ -21,7 +21,7 @@ def dector(img):
         
         for (ex,ey,ew,eh) in eyes:
             cv2.circle(roi_color,(ex+27,ey+27),20,(255,255,0),2)
-    return img
+    return img 
 
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 while True:

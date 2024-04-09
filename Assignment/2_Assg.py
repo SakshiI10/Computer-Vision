@@ -13,8 +13,8 @@ def draw(event, x, y, flag, param):
         
         w = 512 - x
         h = 512 - y
-        area1 = 2 * (x+y)
-        area2 = 2 * (w + h)
+        area1 = x*y
+        area2 = w*h
         #print("Area:", area1)
         #print("Area:", area2)
         MaxArea=max(area1, area2)
